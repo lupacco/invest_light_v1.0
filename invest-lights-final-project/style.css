@@ -1,0 +1,185 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+
+/*Global*/
+body {
+    margin: 0;
+    background: rgb(15, 15, 29);
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    border-radius: 50%;
+}
+main {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+}
+header {
+    font-size: 28px;
+    text-align: center;
+    color: whitesmoke;
+    margin: 80px 0 20px 0;
+}
+form {
+    text-align: center;
+    color: whitesmoke;
+}
+button {
+    background: rgb(15, 15, 29);
+    border: solid violet 1px;
+    border-radius: 50%;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+
+}
+
+/*Class*/
+
+.wrap {
+    margin: 10% 0;
+    width: fit-content;
+}
+
+.top-bottom {
+    display: inline-flex;
+    border-top: 2px solid #777;
+
+}
+.top-bottom li {
+    position: relative;
+    
+}
+.top-bottom li:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    top: -5px;
+    left: 8px; 
+    background: #444;
+}
+.top-bottom li:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    top: -10px;
+    left: 14px;
+    border-bottom: 2px solid #444;
+    border-radius: 50%;
+}
+.lt-side {
+    border-left: 2px solid #777;
+}
+.lt-side li{
+    position: relative;
+}
+.lt-side li:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    top: 8px;
+    left: -5px;
+    background: #444;
+}
+.lt-side li:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 24px;
+    top: 14px;
+    left: -12px;
+    border-right: 2px solid #444;
+    border-radius: 35%;
+}
+.gt-side {
+    border-right: 2px solid #777;
+}
+.gt-side li{
+    position: relative;
+}
+.gt-side li:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    top: 8px;
+    right: -5px;
+    background: #444;
+}
+.gt-side li:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 24px;
+    top: 14px;
+    right: -12px;
+    border-left: 2px solid #444;
+    border-radius: 35%;
+}
+.extra {
+    width: 4px;
+    height: 2px;
+}
+.red {
+    background: red;
+    animation-name: RedShine;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+
+    /*'animation' 'duration' 'tim-func' 'iteration-count' 'direction' 'playstate' 'delay' 'fillmode'*/;
+}
+.yellow {
+    background: yellow;
+    animation-name: YellowShine;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+.blue {
+    background: blue;
+    animation-name: BlueShine;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+.green {
+    background: green;
+    animation-name: GreenShine;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+/*Id*/
+#last-bulb:after {
+    border: none;
+}
+#top {
+    border-left: 2px solid #777;
+    border-right: 2px solid #777;
+}

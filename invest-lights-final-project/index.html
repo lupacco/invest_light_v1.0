@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-kf.css">
+    <script src="script.js" defer></script> 
+    <title>Luzes Invest</title>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="lights top-bottom" id="top">
+            <li class="bulb red"></li>
+            <li class="bulb yellow"></li>
+            <li class="bulb blue"></li>
+            <li class="bulb green"></li>
+            <li class="bulb red"></li>
+            <li class="bulb yellow"></li>
+            <li class="bulb blue"></li>
+            <li class="bulb green"></li>
+            <li class="bulb red"></li>
+            <li class="bulb yellow"></li>
+            <li class="bulb blue"></li>
+            <li class="bulb green"  id="last-bulb"></li>
+        </ul>
+        <main>
+            <ul class="lights lt-side">
+                <li class="bulb green"></li>
+                <li class="bulb blue"></li>
+                <li class="bulb yellow"></li>
+                <li class="bulb red"></li>
+                <li class="bulb green"></li>
+                <li class="bulb blue"></li>
+                <li class="bulb yellow"></li>
+                <li class="bulb red"></li>
+                <li class="bulb green"></li>
+                <li class="bulb blue" id="last-bulb"></li>
+            </ul>
+            <div>
+                <header>Luzes de Natal da Invest Jr.</header>
+                <form>
+                    <button onclick="turnOn()">ON</button>
+                    <button onclick="turnOff()">OFF</button>
+                    <label>
+                        Velocidade
+                        <input id="input" type="number" name="speed" min="1" max="5">
+                    </label>
+                </form>
+            </div>
+            <ul class="lights gt-side" id="bottom">
+                <li class="bulb red"></li>
+                <li class="bulb yellow"></li>
+                <li class="bulb blue"></li>
+                <li class="bulb green"></li>
+                <li class="bulb red"></li>
+                <li class="bulb yellow"></li>
+                <li class="bulb blue"></li>
+                <li class="bulb green"></li>
+                <li class="bulb red"></li>
+                <li class="bulb yellow"  id="last-bulb"></li>
+            </ul>
+        </main>
+        <ul class="lights top-bottom">
+            <li class="bulb yellow"></li>
+            <li class="bulb red"></li>
+            <li class="bulb green"></li>
+            <li class="bulb blue"></li>
+            <li class="bulb yellow"></li>
+            <li class="bulb red"></li>
+            <li class="bulb green"></li>
+            <li class="bulb blue"></li>
+            <li class="bulb yellow"></li>
+            <li class="bulb red" ></li>
+            <li class="bulb green"></li>
+            <li class="bulb blue" id="last-bulb"></li>
+            <div class="extra"></div>
+        </ul>
+    </div>
+</body>
+</html>

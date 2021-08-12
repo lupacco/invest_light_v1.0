@@ -1,0 +1,33 @@
+@keyframes RedShine {
+    /*17*/
+    0% {
+      box-shadow: 0;
+    }
+    100% {
+      box-shadow: 1px 1px 15px rgb(219, 39, 39), -1px -1px 15px rgb(243, 29, 29);
+    }
+  }
+  @keyframes BlueShine {
+    0% {
+      box-shadow: 0;
+    }
+    100% {
+      box-shadow: 1px 1px 15px rgb(0, 0, 255), -1px -1px 15px rgb(0, 0, 255);
+    }
+  }
+  @keyframes YellowShine {
+    0% {
+      box-shadow: 0;
+    }
+    100% {
+      box-shadow: 1px 1px 15px rgb(237, 240, 57), -1px -1px 15px rgb(239, 243, 29);
+    }
+  }
+  @keyframes GreenShine {
+    0% {
+      box-shadow: 0;
+    }
+    100% {
+      box-shadow: 1px 1px 15px rgb(17, 160, 17), -1px -1px 15px rgb(51, 214, 51);
+    }
+  }
